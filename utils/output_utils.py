@@ -87,7 +87,7 @@ def output_color_point_cloud_red_blue(data, seg, out_file):
 
 ##define color heat map
 norm = mpl.colors.Normalize(vmin=0, vmax=255)
-magma_cmap = plt.cm.get_cmap('magma')
+magma_cmap = plt.cm.get_cmap('Reds')
 magma_rgb = []
 for i in range(0, 255):
        k = mpl.colors.colorConverter.to_rgb(magma_cmap(norm(i)))
