@@ -25,7 +25,7 @@ def output_bounding_box_withcorners(box_corners, seg, out_file):
             for line_index in line_indexes:
                 corner0 = box[line_index[0]]
                 corner1 = box[line_index[1]]
-                print corner0.shape
+                print(corner0.shape)
                 dist = np.linalg.norm(corner0 - corner1)
                 dot_num = int(dist / 0.005)
                 delta = (corner1 - corner0) / dot_num
